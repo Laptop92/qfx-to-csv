@@ -83,7 +83,6 @@ def convert_to_csv(qfx_file_path):
     
     csv_file_path = os.path.join(csv_path, csv_file_name)
     
-    
     with open(csv_file_path, 'w') as csv_file:
         column_headers = get_column_headers(INVTRANLIST_node)
         header = ",".join(column_headers) + "\n"
